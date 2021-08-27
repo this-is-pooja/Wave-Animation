@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BackgroundColor } from "chalk";
+import React from "react";
+import Wave from "react-wavify";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div style={{paddingTop:"37.3rem", backgroundColor:"#FF6700"}}>
+     <Wave 
+     fill="#1277b0"
+     paused={false}
+     options={{
+       height:40,
+       amplitude:30,
+       speed:0.55,
+       points:9
+     }}
+   />
+   </div>
   );
 }
-
-export default App;
+export default App
